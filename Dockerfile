@@ -7,4 +7,8 @@ COPY files/etc/ /etc/
 
 #COPY frontend/ /frontend/
 
+EXPOSE 80
+EXPOSE 443
+EXPOSE 1935
+
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
