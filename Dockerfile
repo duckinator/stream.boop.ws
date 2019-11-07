@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-RUN apt update && apt -y install nginx libnginx-mod-rtmp && \
+RUN apt-get update && apt-get -y install nginx libnginx-mod-rtmp && \
       rm -rf /var/lib/apt/lists/*
 
 COPY files/etc/ /etc/
