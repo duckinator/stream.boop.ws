@@ -4,8 +4,7 @@ RUN apt-get update && apt-get -y install nginx libnginx-mod-rtmp && \
       rm -rf /var/lib/apt/lists/*
 
 COPY files/etc/ /etc/
-
-#COPY frontend/ /frontend/
+COPY files/frontend/ /frontend/
 
 EXPOSE 80
 EXPOSE 443
