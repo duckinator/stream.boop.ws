@@ -13,4 +13,4 @@ else
 fi
 
 echo "Running."
-docker run --rm -it --entrypoint /bin/bash -p 80:80 -p 1935:1935 stream
+docker run --rm -it -p 80:80 -p 1935:1935 stream
